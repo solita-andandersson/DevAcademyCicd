@@ -2,6 +2,9 @@
 
 name: CI
 
+env:
+  NAME_OF_USER: Andreas
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
@@ -27,7 +30,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, Andreas!
+        run: echo Hello, $NAME_OF_USER!
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script

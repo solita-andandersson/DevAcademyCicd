@@ -33,8 +33,8 @@ jobs:
         run: echo Hello, $NAME_OF_USER!
 
       # Checking the npm version
-      - name: Run a one-line script
-        run: echo npm --version
+      - name: Display npm version
+        run: npm --version
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script

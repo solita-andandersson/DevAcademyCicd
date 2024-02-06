@@ -26,7 +26,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v36
+      - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -34,7 +34,7 @@ jobs:
 
       # Checking the npm version
       - name: Display npm version
-        run: npm --version
+        run: npm --versionn
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
